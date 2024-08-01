@@ -40,12 +40,6 @@ spec:
           title: Large Language Model(LLM) Server
           description: The model server container to use
           ui:help: If you choose vLLM, ensure your cluster has Nvidia GPU supported, and is with enough cpu and memory
-          SED_ASR_MODEL_SERVER_START
-          type: string
-          enum:
-            - vLLM
-            - llama.cpp
-          # SED_LLM_SERVER_END
             - Existing model server
       dependencies:
         modelServer:
